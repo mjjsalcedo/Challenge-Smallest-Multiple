@@ -19,7 +19,7 @@ module.exports = function( ceiling ) {
         let combo = i * j;
           if(combo % 2 === 0){
               factor_0.push(combo);
-              smallestPositive = Math.max(factor_0);
+              smallestPositive = factor_0.pop();
           }
         }
      }
