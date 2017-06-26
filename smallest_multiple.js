@@ -17,7 +17,7 @@ module.exports = function( ceiling ) {
       for (var i = 1; i <= ceiling; i++) {
         for (var j = 1; j <= ceiling; j++){
         let combo = i * j;
-          if(combo % 2 === 0){
+          if(combo % 2 === 0 && combo / i === 0){
               factor_0.push(combo);
               smallestPositive = factor_0.pop();
           }
